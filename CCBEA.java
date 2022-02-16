@@ -12,7 +12,7 @@ public class CCBEA
 			sum += key[i] * (i + 1);
 		
 		for (int i = 0; i < key.length; ++i)
-			key[i] *= sum * mod;
+			key[i] *= mod * sum;
 
 		for (int i = 0; i < data.length; ++i)
 			data[i] += key[i % key.length];
