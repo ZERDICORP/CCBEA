@@ -35,15 +35,15 @@ To better understand how the algorithm works, let's define the essence of encryp
 
 The __CCBEA__ algorithm can be divided into 3 main stages. Let's look at each separately.
 
-### Stage I ~ «Key weight calculation»
+### Stage I ~ «Key sum calculation»
 ```java
 int sum = 0;
 for (int i = 0; i < key.length; ++i)
   sum += Math.abs(key[i] * (i + 1));
 ```
-At this stage, we must calculate the weight of the key, or, more simply, calculate the sum of all elements in the array.  
+At this stage, we must calculate the sum of the key, that is, calculate the sum of all elements of the array.
 
-Also, adding the next element to the sum variable, we must multiply this element by its `index in the array` + `1` (**+1** because we don't want to multiply the first byte by zero and devalue it completely).  
+Also, adding the next element to the __sum__ variable, we must multiply this element by its `index in the array` + `1` (**+1** because we don't want to multiply the first byte by zero and devalue it completely).  
 
 So why do we need to calculate it? The exact answer lies in the depths of the cryptographic ocean, but in simple terms:
 > Each individual byte of the key must have an effect on all the bytes of the key.
