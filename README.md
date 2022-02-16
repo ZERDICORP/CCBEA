@@ -24,7 +24,7 @@ public class Main
 ```
 $ javac Main.java && java Main
 Hello, world!
-CgGq/HeYrpdlBkZc9Q==
+pneiiIc6vhMJ0H6aPQ==
 Hello, world!
 ```
 
@@ -39,7 +39,7 @@ The __CCBEA__ algorithm can be divided into 3 main stages. Let's look at each se
 ```java
 int sum = 0;
 for (int i = 0; i < key.length; ++i)
-  sum += Math.abs(key[i] * (i + 1));
+  sum += key[i] * (i + 1);
 ```
 At this stage, we must calculate the sum of the key, that is, calculate the sum of all elements of the array.
 
