@@ -1,4 +1,4 @@
-# CCBEA :lock: :key:
+# CCBEA :closed_lock_with_key:
 #### Caesar Cipher Based Encryption Algorithm
 ## Example of usage :ox:
 ```java
